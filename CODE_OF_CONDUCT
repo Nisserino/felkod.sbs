@@ -1,0 +1,13 @@
+Om du vill bidra till projektet
+
+- Felkoderna skrivs på svenska 
+- Skapa en branch och gör en pull request mot main för att föra in din nya felkod 
+- felkoden läggs till med filnamnet <felkodssiffra>.md "platt" i repot
+- Felkod följer mönstret nedan
+```
+### <felkodssiffra>: <felkodsnamn> [obligatoriskt fält]
+<beskrivning> [obligatoriskt fält]  
+
+#### Exempel [frivillig]
+<exempel urskrivet> 
+```
