@@ -12,7 +12,7 @@ err_codes=$(ls [0-9]*.md)
 for i in $err_codes
 do
   err_msg=$(head -n 1 $i)
-  echo "[${err_msg/\#\#\# /}](www.felkod.sbs/${i/.md/})" >> README.md
+  echo "[${err_msg/\#\#\# /}](www.felkod.sbs/${i/.md/})  " >> README.md
 done
 
 # add contributing information to readme to finish
