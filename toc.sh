@@ -9,7 +9,10 @@ EOF
 
 # Loop through "felkoder"
 err_codes=$(ls [0-9]*.md)
-for i in $err_codes
+# sort them
+sorted=($(sort -n <<<"${err_codes[*]}"))
+
+for i in "${sorted[@]}"
 do
   err_msg=$(head -n 1 $i)
   echo "[${err_msg/\#\#\# /}](www.felkod.sbs/${i/.md/})  " >> README.md
