@@ -15,7 +15,7 @@ sorted=($(sort -n <<<"${err_codes[*]}"))
 for i in "${sorted[@]}"
 do
   err_msg=$(head -n 1 $i)
-  echo "[${err_msg/\#\#\# /}](www.felkod.sbs/${i/.md/})  " >> README.md
+  echo "[${err_msg/\#\#\# /}](${i/.md/})  " >> README.md
 done
 
 # add contributing information to readme to finish
